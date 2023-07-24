@@ -1,0 +1,87 @@
+/* Common styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the content area takes at least the height of the viewport */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    height: 80px; /* Set a fixed height for the header */
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Fill the remaining vertical space in the container */
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    flex-shrink: 0; /* Prevent the footer from shrinking when the content is too long */
+}
+
+/* Specific styles for individual pages */
+/* Links in the header */
+nav {
+    display: flex;
+    justify-content: flex-start; /* Align menu items to the right */
+    height: 100%; /* Make the nav fill the full height of the header */
+    align-items: center; /* Vertically center the menu items */
+}
+
+nav a,
+nav a:visited {
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Active link style */
+nav a.active-link {
+    background-color: #555;
+}
+
+/* about.html */
+main p:first-child {
+    font-weight: bold;
+}
+
+/* home.html */
+main p:last-child {
+    font-style: italic;
+}
+
+/* profile.html */
+.profile-card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
